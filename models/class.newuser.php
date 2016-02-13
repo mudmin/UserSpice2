@@ -1,11 +1,11 @@
 <?php
 /*
-UserCake Responsive 2.5.0
-by Dan Hoover
+UserSpice 2.5.5
+by Dan Hoover at http://UserSpice.com
 
 based on
 UserCake Version: 2.0.2
-http://usercake.com
+
 
 UserCake created by: Adam Davis
 UserCake V2.0 designed by: Jonathan Cassels

@@ -1,11 +1,11 @@
 <?php
 /*
-UserCake Responsive 2.5.0
-by Dan Hoover
+UserSpice 2.5.5
+by Dan Hoover at http://UserSpice.com
 
 based on
 UserCake Version: 2.0.2
-http://usercake.com
+
 
 UserCake created by: Adam Davis
 UserCake V2.0 designed by: Jonathan Cassels
@@ -49,9 +49,9 @@ require_once("../models/db-settings.php");
 			<div class="container">
 			  <div class="row">
 			    <div align="center" class="col-md-12">
-<h1>UserCake</h1>
+<h1>UserSpice</h1>
 <h2>Installer</h2>
-<a href='?install=true' class='btn btn-primary'>Install UserCake</a>
+<a href='?install=true' class='btn btn-primary'>Install UserSpice</a>
 <?php
 if(isset($_GET["install"]))
 {
@@ -120,7 +120,7 @@ if(isset($_GET["install"]))
 	(4, 'activation', 'false'),
 	(5, 'resend_activation_threshold', '0'),
 	(6, 'language', 'models/languages/en.php'),
-	(7, 'template', 'models/site-templates/default.css');
+	(7, 'template', 'css/uc-main.css');
 	";
 
 	$pages_sql = "CREATE TABLE IF NOT EXISTS `".$db_table_prefix."pages` (

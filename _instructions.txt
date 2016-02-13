@@ -1,0 +1,53 @@
+***What's Included
+UserSpice is designed to be the basis of your next PHP/HTML project.  It's designed using Bootstrap and other
+relatively universal web tools. 
+
+For your convenience, we've also included a /blank_pages folder with an easy to use template for the site with
+	and without a sidebar.
+	
+Additionally, we've included some bootstrap html files under /blank_pages/special_blanks that can give you some
+	bootstrap inspiration and serve as templates
+	
+Where possible, we have maintained the original file structure and file names from the original UserCake project.
+
+
+
+
+
+***Upgrading from UserCake 2.x or earlier version of UserSpice 2.x
+This assumes you have a working install of UserCake or UserSpice.
+
+1. Decide if you want to use your existing index.php file or the one included with this archive. If you don't need
+the included index.php, remove or rename it.
+
+2. Backup any existing files on your site, especially if you have modified them. This install will not touch your database.
+
+3. Copy all the files from this archive and overwrite your existing files.
+
+4. Use as normal! Visit http://userspice.com if you have any issues.
+
+
+
+***Installing UserSpice from Scratch.
+This option is primarily for developmental purposes.  You are probably better off waiting for version 3.x due before Christmas 2015.
+
+1. Extract the archive to your computer
+
+2. Create a database on your server or web host
+
+3. Open the file models/db-settings.php and fill out your database connection settings. 
+
+4. Open the file models/recaptcha.config.php and enter your reCAPTCHA site and private keys. If you don't have them, they can be 
+obtained at https://www.google.com/recaptcha/admin
+
+NOTE: If you choose to use the default keys, they will work for a short time for testing purposes, but you will receive a nag in the footer
+and these keys can/will stop working at any time. Don't be lazy. Get your own keys!
+
+5. To use the installer visit http://yourdomain.com/install/ in your browser. UserSpice will attempt to build the database for you. After completion
+   delete the install folder.
+   
+6. visit http://yourdomain.com and create a new user immediately as it will be your default administrator.
+
+7. Be sure to login and go to Admin Configuration and set your Website Name, and Especially Website URL and Email so everything will work properly.
+
+Visit http://userspice.com if you have any issues and feel free to check out the inspiration project, http://usercake.com for all their documentation as well. 

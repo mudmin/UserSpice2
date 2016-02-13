@@ -1,11 +1,11 @@
 <?php
 /*
-UserCake Responsive 2.5.0
-by Dan Hoover
+UserSpice 2.5.5
+by Dan Hoover at http://UserSpice.com
 
 based on
 UserCake Version: 2.0.2
-http://usercake.com
+
 
 UserCake created by: Adam Davis
 UserCake V2.0 designed by: Jonathan Cassels
@@ -15,10 +15,19 @@ to be outdated. This version is designed as a cosmetic upgrade for
 users of 2.0.2 and as a path towards development of version 3.0 and beyond
 */
  ?>
-<div class="row">
+ <style>
+   p {
+     font-color:white;
+   }
+ </style>
+<div class="container">
   <div class="col-md-12">
       <footer>
-        <br><strong><p align="center">&copy; 2016 Your Copyright Here</p></strong>
+        <br><strong><p align="center" style="color:white">&copy; 2016 Your Copyright Here</p></strong>
+        <?php if($publickey = "6LenGxITAAAAAImPQkqg_xBC0ZnGvopGa3jeP7S7") {
+          echo "<h3 align='center'style='color:white'>For security reasons, you need to change your reCAPTCHA key.</h3>";
+        }
+        ?>
       </footer>
     </div>
     </div>
@@ -34,3 +43,12 @@ users of 2.0.2 and as a path towards development of version 3.0 and beyond
             // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

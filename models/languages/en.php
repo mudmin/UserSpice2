@@ -1,7 +1,7 @@
 <?php
 /*
-UserCake Version: 2.5.0
-http://usercake.com
+UserCake Version: 3.0.0
+
 */
 
 /*

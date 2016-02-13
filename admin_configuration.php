@@ -1,11 +1,11 @@
 <?php
 /*
-UserCake Responsive 2.5.0
-by Dan Hoover
+UserSpice 2.5.5
+by Dan Hoover at http://UserSpice.com
 
 based on
 UserCake Version: 2.0.2
-http://usercake.com
+
 
 UserCake created by: Adam Davis
 UserCake V2.0 designed by: Jonathan Cassels
@@ -18,6 +18,13 @@ require_once("models/config.php");
 if (!securePage($_SERVER['PHP_SELF'])){die();}
 ?>
 <?php require_once("models/top-nav.php"); ?>
+
+<!-- If you are going to include the sidebar, do it here -->
+<?php require_once("models/left-nav.php"); ?>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+<!-- PHP GOES HERE -->
 <?php if(!empty($_POST))
 {
 	$cfgId = array();
@@ -146,37 +153,33 @@ $templates = getTemplateFiles(); //Retrieve list of template files
 $permissionData = fetchAllPermissions(); //Retrieve list of all permission levels
 ?>
 
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<!-- <div class="jumbotron">
-<div class="container">
-<h1>Jumbotron!!!</h1>
-<p>This is a great area to highlight something.</p>
-<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-</div>
-</div> -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-					<div class="col-md-3"><?php include("models/left-nav.php");  ?></div>
-				<div class="col-md-8">
 
-<!-- Main content goes here!           -->
+
+
+
+
+        <div id="page-wrapper">
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+
+          <!-- <div class="jumbotron">
+          <div class="container">
+          <h1>Jumbotron!!!</h1>
+          <p>This is a great area to highlight something.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          </div>
+          </div> -->
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Admin Configuration
+                        </h1>
+<!-- CONTENT GOES HERE -->
 <?php
-echo "
-<body>
-<div id='wrapper'>
-<div id='top'><div id='logo'></div></div>
-<div id='content'>
-<h2>Admin Configuration</h2>
-<div id='left-nav'>";
-
-//
-
-echo "
-</div>
-<div id='main'>";
-
 echo resultBlock($errors,$successes);
 
 echo "
@@ -247,27 +250,32 @@ foreach ($templates as $temp){
 		echo "<option value='".$temp."'>$temp</option>";
 	}
 }
+?>
 
-echo "
 </select>
 </p>
 <input  class='btn btn-primary' type='submit' name='Submit' value='Submit' />
 </form>
-";
-?>
-</div>
-</div>
 
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
 
     </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-
+    <!-- /#wrapper -->
+<!-- footer -->
 <?php require_once("models/footer.php"); ?>
-
-</body>
-</html>
