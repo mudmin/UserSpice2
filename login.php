@@ -1,6 +1,6 @@
 <?php
 /*
-UserSpice 2.5.5
+UserSpice 2.5.6
 by Dan Hoover at http://UserSpice.com
 
 based on
@@ -35,6 +35,22 @@ if(isUserLoggedIn()) { header("Location: account.php"); die(); }
 //Forms posted
 if(!empty($_POST))
 {
+	//reCAPTCHA 2.0 check
+// empty response
+$response = null;
+
+// check secret key
+$reCaptcha = new ReCaptcha($privatekey);
+
+// if submitted check response
+if ($_POST["g-recaptcha-response"]) {
+		$response = $reCaptcha->verifyResponse(
+				$_SERVER["REMOTE_ADDR"],
+				$_POST["g-recaptcha-response"]
+		);
+}
+if ($response != null && $response->success) {
+
 	$errors = array();
 	$username = sanitize(trim($_POST["username"]));
 	$password = trim($_POST["password"]);
@@ -98,7 +114,7 @@ if(!empty($_POST))
 			}
 		}
 	}
-
+}
 
 ?>
 

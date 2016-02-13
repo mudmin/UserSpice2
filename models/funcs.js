@@ -1,5 +1,5 @@
 /*
-UserSpice 2.5.5
+UserSpice 2.5.6
 by Dan Hoover at http://UserSpice.com
 
 based on

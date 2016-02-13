@@ -1,6 +1,6 @@
 <?php
 /*
-UserSpice 2.5.5
+UserSpice 2.5.6
 by Dan Hoover at http://UserSpice.com
 
 based on
@@ -114,9 +114,9 @@ if(isset($_GET["install"]))
 
 	$configuration_entry = "
 	INSERT INTO `".$db_table_prefix."configuration` (`id`, `name`, `value`) VALUES
-	(1, 'website_name', 'UserCake'),
+	(1, 'website_name', 'UserSpice'),
 	(2, 'website_url', 'localhost/'),
-	(3, 'email', 'noreply@ILoveUserCake.com'),
+	(3, 'email', 'noreply@userspice.com'),
 	(4, 'activation', 'false'),
 	(5, 'resend_activation_threshold', '0'),
 	(6, 'language', 'models/languages/en.php'),
